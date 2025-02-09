@@ -47,14 +47,21 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
-
+    position: relative;
+    display: inline-block;
     background: linear-gradient(45deg, var(--terciary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  
-  .title span {
+}
+
+.title span {
     font-weight: 300;
-  }
+    background: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
   
   .subtitle {
     font-size: 1.1rem;
