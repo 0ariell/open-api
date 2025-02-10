@@ -132,10 +132,32 @@
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(139, 107, 255, 0.3);
   }
+
+  .owm-button {
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background: var(--primary);
+    color: var(--light);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .owm-button:hover {
+    background: #866bffb4;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 107, 255, 0.3);
+  }
   
   /* Resultados */
   .weather-result {
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 1.5rem;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
