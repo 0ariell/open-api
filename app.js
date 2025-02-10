@@ -36,7 +36,7 @@ function mostrarClima(data) {
   const { name, main, weather } = data;
   resultado.innerHTML = `
     <h2>Clima en ${name}</h2>
-    <p><strong>Temperatura:</strong> ${main.temp} °C</p>
+    <p><strong>Temperatura:</strong> ${Math.round(main.temp)} °C</p>
     <p><strong>Humedad:</strong> ${main.humidity}%</p>
     <p><strong>Condiciones:</strong> ${weather[0].description}</p>
     <img src="https://openweathermap.org/img/wn/${weather[0].icon}@2x.png" alt="${weather[0].description}">
